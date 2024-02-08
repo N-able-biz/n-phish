@@ -20,6 +20,16 @@ To build Gophish from source, simply run `git clone https://github.com/N-able-bi
 
 The phish server and admin server needs separate installations of the same source.
 
+The admin instance:
+The admin server available, but firewalled responsibly
+The phish server set to 127.0.0.1, effectively shutting it off
+Responsible for sending emails
+The containerized frontend instance
+The admin server set to 127.0.0.1, effectively shutting it off
+The phish server available
+The disable-mailer flag set to disable sending emails
+Both share a single MySQL instance
+
 <!-- ### Docker
 
 You can also use Gophish via the official Docker container [here](https://hub.docker.com/r/gophish/gophish/). -->
@@ -28,7 +38,7 @@ You can also use Gophish via the official Docker container [here](https://hub.do
 
 N-phish is based on MySql database.
 
-**Install mysql server and create a separate user as nphish.**
+**Install mysql server and create a separate user as 'nphish'.Make sure the password does not contain '@' symbol.**
 
 ##### Update MySQL Config
 
@@ -47,6 +57,12 @@ sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 
 Then edit the bind-address to the phish server IP and admin server IP. Or set to 0.0.0.0 to allow for all IPs.
+
+Restart mysql service
+
+```
+sudo systemctl start mysql.service
+```
 
 #### Create the database
 
