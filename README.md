@@ -20,15 +20,17 @@ To build Gophish from source, simply run `git clone https://github.com/N-able-bi
 
 The phish server and admin server needs separate installations of the same source.
 
-The admin instance:
-The admin server available, but firewalled responsibly
-The phish server set to 127.0.0.1, effectively shutting it off
-Responsible for sending emails
-The containerized frontend instance
-The admin server set to 127.0.0.1, effectively shutting it off
-The phish server available
-The disable-mailer flag set to disable sending emails
-Both share a single MySQL instance
+- **Admin Instance:**
+  - The admin server is available but responsibly firewalled.
+  - The phish server is set to 127.0.0.1, effectively shutting it off.
+  - Responsible for sending emails.
+- **Containerized Frontend Instance:**
+  - The admin server is set to 127.0.0.1, effectively shutting it off.
+  - The phish server is available.
+  - The `disable-mailer` flag is set to disable sending emails.
+    uncomment the lines 100 and 101 in gophish.go before building binary.
+- **Shared MySQL Instance:**
+  - Both instances share a single MySQL instance.
 
 <!-- ### Docker
 
