@@ -6,7 +6,7 @@
 
 N-phish: Phishing Toolkit
 
-N-phish a phishing toolkit developed by N-able (Pvt) Ltd, based on [Gophish](https://getgophish.com) an open-source phishing toolkit designed for businesses and penetration testers. It provides the ability to quickly and easily setup and execute phishing engagements and security awareness training.
+N-phish is a phishing toolkit developed by N-able (Pvt) Ltd, based on [Gophish](https://getgophish.com) an open-source phishing toolkit designed for businesses and penetration testers. It provides the ability to quickly and easily setup and execute phishing engagements and security awareness training.
 
 ## Install
 
@@ -14,7 +14,7 @@ N-phish a phishing toolkit developed by N-able (Pvt) Ltd, based on [Gophish](htt
 
 ### Building From Source
 
-**If you are building from source, please note that Gophish requires Go v1.10 or above!**
+**Please note that Gophish requires Go v1.10 or above!**
 
 To build Gophish from source, simply run `git clone https://github.com/N-able-biz/n-gophish` and `cd` into the project source directory. Then, run `go build`. After this, you should have a binary called `gophish` in the current directory.
 
@@ -38,7 +38,7 @@ You can also use Gophish via the official Docker container [here](https://hub.do
 
 ### Setup
 
-N-phish is based on MySql database.
+N-phish uses a MySql database.
 
 **Install mysql server and create a separate user as 'nphish'. Make sure the password does not contain '@' symbol.**
 
@@ -85,7 +85,7 @@ Change the entries in config.json in both phish server and admin server to match
 
 username and database will be `nphish`.Port will be 3306. Password is the MySql nphish user password,Host is the MySQL server IP.
 
-After running the Gophish binary, open an Internet browser to https://[admin_server]:3333 and login with the default username and password listed in the log output.
+After running the Gophish binary in both servers, open an Internet browser to https://[admin_server]:3333 and login with the default username and password listed in the log output.
 e.g.
 
 ```
