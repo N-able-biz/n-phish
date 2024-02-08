@@ -1,4 +1,4 @@
-![gophish logo](https://raw.github.com/gophish/gophish/master/static/images/nphish_purple.png)
+![gophish logo](https://raw.github.com/N-able-biz/n-gophish/master/static/images/nphish_purple.png)
 
 # Gophish
 
