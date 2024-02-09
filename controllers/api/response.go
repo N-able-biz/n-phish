@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	log "github.com/gophish/gophish/logger"
+	log "github.com/N-able-biz/n-gophish/logger"
 )
 
 // JSONResponse attempts to set the status code, c, and marshal the given interface, d, into a response that
