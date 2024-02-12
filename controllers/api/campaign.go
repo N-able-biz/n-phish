@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strconv"
 
-	ctx "github.com/gophish/gophish/context"
-	log "github.com/gophish/gophish/logger"
-	"github.com/gophish/gophish/models"
+	ctx "github.com/N-able-biz/n-gophish/context"
+	log "github.com/N-able-biz/n-gophish/logger"
+	"github.com/N-able-biz/n-gophish/models"
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
 )

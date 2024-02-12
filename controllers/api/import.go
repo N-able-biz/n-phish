@@ -9,11 +9,11 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/N-able-biz/n-gophish/dialer"
+	log "github.com/N-able-biz/n-gophish/logger"
+	"github.com/N-able-biz/n-gophish/models"
+	"github.com/N-able-biz/n-gophish/util"
 	"github.com/PuerkitoBio/goquery"
-	"github.com/gophish/gophish/dialer"
-	log "github.com/gophish/gophish/logger"
-	"github.com/gophish/gophish/models"
-	"github.com/gophish/gophish/util"
 	"github.com/jordan-wright/email"
 )
 

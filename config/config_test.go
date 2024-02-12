@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	log "github.com/gophish/gophish/logger"
+	log "github.com/N-able-biz/n-gophish/logger"
 )
 
 var validConfig = []byte(`{

@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	ctx "github.com/gophish/gophish/context"
-	"github.com/gophish/gophish/models"
+	ctx "github.com/N-able-biz/n-gophish/context"
+	"github.com/N-able-biz/n-gophish/models"
 	"github.com/gorilla/csrf"
 )
 
