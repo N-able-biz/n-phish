@@ -14,21 +14,22 @@ N-phish is a phishing toolkit developed by N-able (Pvt) Ltd, based on [Gophish](
 
 ### Building From Source
 
-**Please note that Gophish requires Go v1.10 or above!**
+**Please note that Nphish requires Go v1.10 or above!**
 
-To build Gophish from source,navigate to directory `go/pkg/mod/github.com` and simply run `git clone https://github.com/N-able-biz/n-gophish`. Then navigate into the project source directory where the **nphish.go** file is located. Then, run `go build nphish.go`. After this, you should have a binary called `nphish` in the current directory.
+To build Nphish from source,navigate to directory `go/pkg/mod/github.com` and simply run `git clone https://github.com/N-able-biz/n-gophish`. Then navigate into the project source directory where the **nphish.go** file is located. Then, run `go build nphish.go`. After this, you should have a binary called `nphish` in the current directory.
 
 The phish server and admin server needs separate installations of the same source.
+**The following changes should be done in the `config.json` file both instances separately.**
 
 - **Admin Instance:**
   - The admin server is available but responsibly firewalled.
   - The phish server is set to 127.0.0.1, effectively shutting it off.
   - Responsible for sending emails.
-- **Containerized Frontend Instance:**
+- **Containerized Frontend Instance(Phish instance):**
   - The admin server is set to 127.0.0.1, effectively shutting it off.
   - The phish server is available.
   - The `disable-mailer` flag is set to disable sending emails.
-    Uncomment the lines 100 and 101 in gophish.go before building binary.
+    (Uncomment the lines 100 and 101 in nphish.go before building binary.)
 - **Shared MySQL Instance:**
   - Both instances share a single MySQL instance.
 
@@ -85,7 +86,7 @@ Change the entries in config.json in both phish server and admin server to match
 
 username and database will be `nphish`.Port will be 3306. Password is the MySql nphish user password,Host is the MySQL server IP.
 
-After running the Gophish binary in both servers, open an Internet browser to https://[admin_server]:3333 and login with the default username and password listed in the log output.
+After running the Nphish binary in both servers, open an Internet browser to https://[admin_server]:3333 and login with the default username and password listed in the log output.
 e.g.
 
 ```
