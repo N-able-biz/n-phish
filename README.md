@@ -19,7 +19,7 @@ N-phish is a phishing toolkit developed by N-able (Pvt) Ltd, based on [Gophish](
 To build Nphish from source,navigate to directory `go/pkg/mod/github.com` and simply run `git clone https://github.com/N-able-biz/n-gophish`. Then navigate into the project source directory where the **nphish.go** file is located. Then, run `go build nphish.go`. After this, you should have a binary called `nphish` in the current directory.
 
 The phish server and admin server needs separate installations of the same source.
-**The following changes should be done in the `config.json` file both instances separately.**
+**The following changes should be done in the `config.json` file for both instances separately.**
 
 - **Admin Instance:**
   - The admin server is available but responsibly firewalled.
