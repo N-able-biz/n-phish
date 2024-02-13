@@ -6,7 +6,7 @@
 
 N-phish: Phishing Toolkit
 
-N-phish is a phishing toolkit developed by N-able (Pvt) Ltd, based on [Gophish](https://getgophish.com) an open-source phishing toolkit designed for businesses and penetration testers. It provides the ability to quickly and easily setup and execute phishing engagements and security awareness training.
+N-phish is a phishing toolkit developed by N-able (Pvt) Ltd, based on [Gophish](https://getgophish.com) v0.12.1 an open-source phishing toolkit designed for businesses and penetration testers. It provides the ability to quickly and easily setup and execute phishing engagements and security awareness training.
 
 ## Install
 
@@ -16,7 +16,7 @@ N-phish is a phishing toolkit developed by N-able (Pvt) Ltd, based on [Gophish](
 
 **Please note that Gophish requires Go v1.10 or above!**
 
-To build Gophish from source, simply run `git clone https://github.com/N-able-biz/n-gophish` and `cd` into the project source directory. Then, run `go build`. After this, you should have a binary called `gophish` in the current directory.
+To build Gophish from source,navigate to directory `go/pkg/mod/github.com` and simply run `git clone https://github.com/N-able-biz/n-gophish`. Then navigate into the project source directory where the **nphish.go** file is located. Then, run `go build nphish.go`. After this, you should have a binary called `nphish` in the current directory.
 
 The phish server and admin server needs separate installations of the same source.
 
